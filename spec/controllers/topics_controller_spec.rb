@@ -18,7 +18,8 @@ describe TopicsController do
       assigns(:contents).each {|content| content.topic_id.should be_present}
     end
 
-    it 'should be published' 
+    it 'should be published' do
+    end
 
     it 'Should have associated content' do
       get :show, :level_id => @level.id, :id => @topic.id
